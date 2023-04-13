@@ -12,7 +12,11 @@ public class PlayerControl : MonoBehaviour
     
 
     private void Awake()
-    {        
+    {
+        for (int i = 0; i < 15; i++)
+        {
+
+        }
         _playerInput = new PlayerInputActions();
         _playerInput.KeyBoardMap.Jump.performed += Plasyerjumping;
         BarrierCollisionDetection.OnCollided += DisableControls;
